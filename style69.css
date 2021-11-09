@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.container{
+    width: 100%;
+    min-height:100vh ;
+    padding-left: 8%;
+    padding-right:8% ;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 400px;
+    height: 100px;
+    cursor: pointer;
+}
+nav{
+    flex: 1;
+    text-align: right;
+    
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30;
+}
+nav ul li a{
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: large;
+    font-weight: bolder;
+    color: orangered;
+
+}
+.micon{
+    height: 40px;
+    width: 40px;
+    display: none;
+    cursor: pointer;
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+.col1{
+flex-basis:40%;
+position: relative;
+margin-left: 15%;
+}
+.col1 h1{
+color: orangered;
+
+}
+.cvbutton{
+border: solid 2px orangered;
+width: 140px;
+padding: 12px 10px;
+background-color: #ff4500;
+border-radius: 10px;
+margin: 20px;
+}
+.cvbutton a{
+text-decoration: none;
+color: black;
+font-style: bold;
+cursor: pointer;
+
+}
+
+.col1::after{
+content: '';
+width: 10px;
+
+height: 57%;
+background: linear-gradient(orangered , orange);
+position: absolute;
+left: -40px;
+top: 8px;}
+
+.col2 .dp{
+width: 90% ;
+border-radius: 100px;
+
+}
+table{
+margin: 10px;
+width: 100%;
+align-items: center;
+}
+
+div ul li{
+padding: 20px;
+margin: 20px;
+}
+.row1,.row2,.row3,.row4,.row5,.row6,.row7{
+
+font-size: medium;
+background: linear-gradient(orangered , orange);
+border-radius: 30px;
+border: solid 2px;
+margin: 30px;
+font: bolder;
+font-size: large;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+padding: 50px;
+}
+
+
+
+@media only screen and (max-width:1000px){
+
+    nav ul{
+        width: 100%;
+        
+        background: linear-gradient(orangered , orange);
+
+        position: absolute;
+        margin: 25px;
+        top: 75px;
+        right: 0;
+        z-index:2 ;
+        display:block;
+        
+
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: inline;
+    }
+
+    nav ul li a{
+    color: black;
+ 
+ }
+     .micon{
+         display:none;
+     }
+
+
+@media only screen and (max-width:700px){
+
+       nav ul{
+           width: 100%;
+           
+           background: linear-gradient(orangered , orange);
+
+           position: absolute;
+           margin: 25px;
+           top: 75px;
+           right: 0;
+           z-index:2 ;
+           display: none;
+           
+
+       }
+
+       nav ul li {
+           display: block;
+           margin-top: 10px;
+           margin-bottom: 10px;
+           display: inline;
+       }
+
+       nav ul li a{
+       color: black;
+       display: none;
+    
+    }
+        .micon{
+            display: block;
+        }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 200px 0;
+    }
+
+
+
+}
